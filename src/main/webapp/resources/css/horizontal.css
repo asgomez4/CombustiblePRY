@@ -1,0 +1,94 @@
+.encab{
+    width: 100%;
+    background: rgb(207,10,44);
+}
+
+#btn-menu{
+    display: none;
+}
+
+.encab label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+.encab label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menuHori ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menuHori li{
+    text-align: center;
+    flex-grow: 1;
+    border-right: 1px solid #fff;
+}
+
+.menuHori li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menuHori li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuHori ul li:hover .children {
+    display:block;
+}
+
+.menuHori ul li .children {
+    display: none;
+    background:rgba(211, 53, 67, 0.9);
+    position: absolute;
+    width: 18%;
+    z-index:1000;
+}
+
+.menuHori ul li .children li {
+    display:block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.menuHori ul li .children li a {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .encab label{
+        display: block;
+    }
+
+    .menuHori{
+        position: absolute;
+        background: rgb(207,10,44);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menuHori ul{
+        flex-direction: column;
+    }
+
+    .menuHori li{
+        border-top: 1px solid #fff;
+        text-align: justify;
+    }
+
+    #btn-menu:checked ~ .menuHori{
+        margin: 0;
+    }
+}
