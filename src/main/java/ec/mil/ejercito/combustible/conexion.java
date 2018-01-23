@@ -14,9 +14,9 @@ import java.sql.DriverManager;
  */
 public class conexion {
 
-    static String url = "jdbc:mysql://localhost:3306/combustible";
+    static String url = "jdbc:mysql://localhost:3307/combustible";
     static String usuario = "root";
-    static String pass = "12345";
+    static String pass = "1492";
 
     public static Connection Conexion() {
         try {

@@ -75,9 +75,9 @@
                                     Statement sentencia = null;
                                     ResultSet resultado = null;
                                     Class.forName("com.mysql.jdbc.Driver");//driver 
-                                    String cadenaConexion = "jdbc:mysql://localhost:3306/combustible";//cadena de conexion 
+                                    String cadenaConexion = "jdbc:mysql://localhost:3307/combustible";//cadena de conexion 
                                     String usuario = "root";//usuario base de datos 
-                                    String clave = "12345";//clave usuario base de datos 
+                                    String clave = "1492";//clave usuario base de datos 
                                     conexion = DriverManager.getConnection(cadenaConexion, usuario, clave);//registrar conexion 
                                     if (!conexion.isClosed()) {
                                         // La consulta 
@@ -121,9 +121,9 @@
                                     Statement sentencia = null;
                                     ResultSet resultado = null;
                                     Class.forName("com.mysql.jdbc.Driver");//driver 
-                                    String cadenaConexion = "jdbc:mysql://localhost:3306/combustible";//cadena de conexion 
+                                    String cadenaConexion = "jdbc:mysql://localhost:3307/combustible";//cadena de conexion 
                                     String usuario = "root";//usuario base de datos 
-                                    String clave = "12345";//clave usuario base de datos 
+                                    String clave = "1492";//clave usuario base de datos 
                                     conexion = DriverManager.getConnection(cadenaConexion, usuario, clave);//registrar conexion 
                                     if (!conexion.isClosed()) {
                                         // La consulta 

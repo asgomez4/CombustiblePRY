@@ -40,9 +40,7 @@
                 resultado
                         = "<table style='text-align:center;' class='tab' border='1'>"
                         + "<tr>"
-                        + "<th><h3>FECHA</h3></th> <th>TIPO DE ACTIVIDAD</th> <th>OPERACIONES MENSUALES</th>"
-                        + "<th>TIPO DE COMBUSTIBLE</th> <th>CANTIDAD DE COMBUSTIBLE</th> <th>KILOMETRAJE</th>"
-                        + "</tr>";
+                        + "<th><h3>ORD</h3></th> <th>DESCRIPCIÓN</th> <th>CANTIDAD</th>";
                 for(int a=0; a<listEnc.size(); a++){
                     resultado += "<tr>"
                         + "<th>" + listEnc.get(a).getEncFecha() + "</th>"
@@ -66,12 +64,12 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina"> \ Registro de Requerimiento</ui:insert>
+            <ui:insert name="tituloPagina"> \ Consolidado Requerimiento de Combustible</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>
         <form name ="frmuser" class="formu" method="POST" action="Req_ReporteUnidad.jsp">
-            <table class="tab" border="1">
+            <table class="tab">
                 <tr>
                     <td>
                         <h2>Unidad:</h2>  
@@ -117,24 +115,20 @@
                         %>      
                     </td>
                     <td>
-                        <input type="submit" name="btnBReqU" class="formulario_submit" value="Generar Reporte" />
+                        <input type="submit" name="btnBReqU" class="formulario_submit" value="Generar Consolidado" />
                     </td>
                 </tr>
                 <tr>
                     <!--encabezado del reporte -->
                     <td colspan="2"> &nbsp; 
-                        <div>
-                            <h2 ALIGN="CENTER"><B>ACTA REQUERIMIENTO DE COMBUSTIBLE</B></h2>
-                            <h3>
-                                <script type="text/javascript">
-                                    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
-                                    var f=new Date(); 
-                                    document.write("A los "+f.getDate() + " días del mes de " + meses[f.getMonth()] + " del " + f.getFullYear()
-                                    +", se reúnen  en la sala de operaciones de la Unidad el Comandate, Oficiales de Operaciones y Logística , a fin de elaborar el acta de requerimiento \n\
-                                    de combustible de la Unidad para las operaciones militares y actividades administrativas, a ser ejecutadas durante el mes de " +meses[f.getMonth()+1]+" del "+f.getFullYear()); 
-                                </script>
-                            </h3>                        
-                        </div>
+                        <h3 ALIGN="RIGHT">
+                            <script type="text/javascript">
+                                var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
+                                var f=new Date(); 
+                                document.write(f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear()); 
+                            </script>
+                        </h3>
+                        <h3 ALIGN="LEFT"><B>Asunto: SOLICITANDO REQUERIMIENTO DE COMBUSTIBLE</B></h3>
                     </td>
                 </tr>
                 <tr>                     

@@ -31,8 +31,18 @@
         <br/> <br/> <br/> <br/> 
         <br/> <br/>
         <form class="formu">
-            <table class="tab" border="1">
-                
+            <table class="tab" >
+                <tr>
+                    <!--encabezado -->
+                    <td colspan="2"> &nbsp; 
+                        <div>
+                            <h2 ALIGN="CENTER"><B>ACTA REQUERIMIENTO DE COMBUSTIBLE</B></h2>
+                            <h3>
+                                
+                            </h3>                        
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <article>

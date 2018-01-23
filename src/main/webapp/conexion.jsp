@@ -10,7 +10,7 @@
     Statement sql = null;
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        conex = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/combustible","root","12345");
+        conex = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3307/combustible","root","1492");
         sql = conex.createStatement();
         //out.print("CONEXION EXTABLECIDA");
     }

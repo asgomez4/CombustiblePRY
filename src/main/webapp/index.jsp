@@ -50,6 +50,12 @@
                     <li><a href="factura.jsp">Registro de Factura</a></li>
                     <li><a href="remision.jsp">Registro de Guía de Remisión</a></li>
                     <li><a href="despacho.jsp">Despacho de Combustible</a></li>
+                    <li>
+                        <a href="#">Consolidados</a>
+                        <ul class="children">
+                            <li><a href="ConsolidadoComb.jsp">Combustible por Unidad</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
