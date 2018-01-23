@@ -66,7 +66,7 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina">Registro de Requerimiento</ui:insert>
+            <ui:insert name="tituloPagina"> \ Registro de Requerimiento</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>
@@ -125,7 +125,23 @@
                 </tr>
                 <tr>
                     <td colspan="2"> &nbsp;</td>
-                </tr>                
+                </tr> 
+                <tr>
+                    <!--encabezado del reporte -->
+                    <div>
+                        <h2 ALIGN="CENTER"><B>ACTA REQUERIMIENTO DE COMBUSTIBLE</B></h2>
+                        <h3>
+                            <script type="text/javascript"> 
+                            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
+                            var f=new Date(); 
+                            document.write("A los "+f.getDate() + " días del mes de " + meses[f.getMonth()] + " del " + f.getFullYear()
+                                    +", se reúnen  en la sala de operaciones de la Unidad el Comandate, Oficiales de Operaciones y Logística , a fin de elaborar el acta de requerimiento \n\
+                                    de combustible de la unidad para las operaciones militares y actividades administrativas, a ser ejecutadas durante el mes en curso."); 
+                            </script>
+                        </h3>
+                        
+                    </div>
+                </tr>
                 <tr>
                     <td colspan="2">
                         <%
