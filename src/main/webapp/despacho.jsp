@@ -26,7 +26,7 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina">Despacho de combustibles</ui:insert>
+            <ui:insert name="tituloPagina"> \ Despacho de combustibles</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>

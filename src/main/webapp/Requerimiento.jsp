@@ -58,7 +58,7 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina">Registro de Requerimiento</ui:insert>
+            <ui:insert name="tituloPagina"> \ Registro de Requerimiento</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>

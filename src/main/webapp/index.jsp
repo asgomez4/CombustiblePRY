@@ -41,7 +41,7 @@
             <nav class="menuHori">
                 <ul>
                     <li>
-                        <a href="#">Requerimiento de Combistible</a>
+                        <a href="#">Requerimiento de Combustible</a>
                         <ul class="children">
                             <li><a href="Requerimiento.jsp">Registrar</a></li>
                             <li><a href="Req_ReporteUnidad.jsp">Reporte por Unidad</a></li>

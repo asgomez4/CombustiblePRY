@@ -66,7 +66,7 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina"> \Registro de Requerimiento</ui:insert>
+            <ui:insert name="tituloPagina"> \ Registro de Requerimiento</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>
@@ -117,36 +117,55 @@
                         %>      
                     </td>
                     <td>
-                        <input type="submit" name="btnBReqU" class="formulario_submit" value="Generar Reporte"/>
+                        <input type="submit" name="btnBReqU" class="formulario_submit" value="Generar Reporte" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"> &nbsp;</td>
+                    <!--encabezado del reporte -->
+                    <td colspan="2"> &nbsp; 
+                        <div>
+                            <h2 ALIGN="CENTER"><B>ACTA REQUERIMIENTO DE COMBUSTIBLE</B></h2>
+                            <h3>
+                                <script type="text/javascript">
+                                    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
+                                    var f=new Date(); 
+                                    document.write("A los "+f.getDate() + " días del mes de " + meses[f.getMonth()] + " del " + f.getFullYear()
+                                    +", se reúnen  en la sala de operaciones de la Unidad el Comandate, Oficiales de Operaciones y Logística , a fin de elaborar el acta de requerimiento \n\
+                                    de combustible de la Unidad para las operaciones militares y actividades administrativas, a ser ejecutadas durante el mes de " +meses[f.getMonth()+1]+" del "+f.getFullYear()); 
+                                </script>
+                            </h3>                        
+                        </div>
+                    </td>
+                </tr>
+                <tr>                     
+                    <td colspan="2"> &nbsp;                        
+                    </td>                    
                 </tr>
                 <tr>
                     <td colspan="2"> &nbsp;</td>
                 </tr> 
-                <tr>
-                    <!--encabezado del reporte -->
-                    <div>
-                        <h2 ALIGN="CENTER"><B>ACTA REQUERIMIENTO DE COMBUSTIBLE</B></h2>
-                        <h3>
-                            <script type="text/javascript"> 
-                            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"); 
-                            var f=new Date(); 
-                            document.write("A los "+f.getDate() + " días del mes de " + meses[f.getMonth()] + " del " + f.getFullYear()
-                                    +", se reúnen  en la sala de operaciones de la Unidad el Comandate, Oficiales de Operaciones y Logística , a fin de elaborar el acta de requerimiento \n\
-                                    de combustible de la unidad para las operaciones militares y actividades administrativas, a ser ejecutadas durante el mes en curso."); 
-                            </script>
-                        </h3>
-                        
-                    </div>
-                </tr>
+               
                 <tr>
                     <td colspan="2">
                         <%
                             out.println(resultado);
                         %>
+                    </td>
+                </tr>
+                <tr>
+                    <!--firmas -->
+                    <td colspan="2"> &nbsp; 
+                        <div>
+                            <h3>
+                                <pre>
+                                EL OFICIAL DE LOGÍSTICA             EL OFICIAL DE OPERACIONES               EL COMANDANTE
+
+
+                                .......................             ........................            .......................
+                                     CAPT. DE INT                         MAYO. DE INF.                    Sr. TCRN. DE E.M.
+                                </pre>                                
+                            </h3> 
+                        </div>
                     </td>
                 </tr>
             </table>

@@ -26,12 +26,13 @@
         </div>
         <div id="cab" class="barraTitulo">
             <b><ui:insert name="nombreSistema">Sistema de Transportes</ui:insert></b>        
-            <ui:insert name="tituloPagina">Guía de Remisión</ui:insert>
+            <ui:insert name="tituloPagina"> \ Guía de Remisión</ui:insert>
         </div>
         <br/> <br/> <br/> <br/> 
         <br/> <br/>
         <form class="formu">
-            <table class="tab">
+            <table class="tab" border="1">
+                
                 <tr>
                     <td>
                         <article>
